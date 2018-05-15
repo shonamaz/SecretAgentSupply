@@ -1,0 +1,316 @@
+
+
+
+/*Universal elements*/
+
+body {
+  font-family: helvetica;
+  color: white;
+  line-height: normal;
+  font-size: 18px;
+}
+
+main {
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 10px auto;
+
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+.left-align h4 {
+  text-align: left;
+}
+
+.center-align {
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 1.5em;
+
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+/*Header elements*/
+.banner {
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-content {
+  padding: 20px;
+  display: flex;
+  width: 960px;
+  align-items: center;
+}
+
+.banner-content img {
+
+  height: 1.5rem;
+  width: auto;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.banner-content h4 {
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  font-size: 1rem;
+}
+
+
+
+/*Hero elements*/
+.hero {
+  width: 100%;
+  height: 25rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-thumb {
+  background-color: black;
+  height: 170px;
+  width: 26rem;
+  margin-top: 4rem;
+}
+
+.hero-thumb-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+
+.hero-thumb-content h4 {
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.hero-thumb-content h1 {
+  font-size: 2rem;
+}
+
+/*Navigation elements*/
+
+.nav-banner {
+  width: 100%;
+  background-color: firebrick;
+  display: flex;
+  justify-content: center;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  height: 100%;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  display: inline-block;
+}
+
+/*Main content elements*/
+
+.product-thumnails-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.product-thumb {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid black;
+  justify-content: space-between;
+
+}
+
+.thumb-container {
+  width: 9rem;
+  height: auto;
+  margin: auto;
+  background-color: white;
+  padding: 2rem;
+}
+
+.thumb-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+.text-block {
+  background-color: black;
+  width: 100%;
+
+}
+
+.text-block h4{
+  padding: 0.5rem;
+}
+
+/*Info elements*/
+
+.info-block {
+  width: 35%;
+  height: auto;
+  padding-bottom: 4rem;
+}
+
+.info-block p {
+  color: black;
+}
+
+.info-block h4 {
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.footer-content {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width: 1025px) {
+  #mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #glasses {
+    display: none;
+  }
+
+  main {
+    width: 100%
+  }
+
+  .product-thumb {
+    width: 47%;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .banner-content img {
+
+    height: 1rem;
+  }
+
+  .banner-content h4 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  #watch {
+    display: none;
+  }
+
+  .hero {
+    height: 15rem;
+  }
+
+  .hero-thumb {
+    height: 170px;
+    width: 100%;
+    margin-top: 10rem;
+  }
+
+  .product-thumb {
+    width: 90%;
+  }
+
+  .product-thumnails-grid {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .info-block {
+    width: 90%;
+    padding-bottom: 0.5rem;
+  }
+
+  .footer-content {
+    justify-content:center;
+  }
+
+  .hero-thumb {
+    height:auto;
+    margin-bottom: 1rem;
+  }
+
+  .hero-thumb-content {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero-thumb-content h1 {
+    font-size: 1rem;
+  }
+
+  .hero-thumb-content h4 {
+    font-size: 0.77rem;
+  }
+
+}
